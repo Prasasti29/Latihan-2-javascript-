@@ -1,0 +1,122 @@
+<!-- no 1 -->
+<script>
+var panjang = 2;
+var lebar = 4;
+var tinggi  = 5;
+var volume = panjang*lebar*tinggi;
+document.write("Nomer 1");
+document.write("<br>");
+document.write("Hasil panjang = " + panjang);
+document.write("<br>");
+document.write("Hasil lebar = " + lebar);
+document.write("<br>");
+document.write("Hasil tinggi = " + tinggi);
+document.write("<br>");
+document.write("Hasil Volume = " + volume);
+</script>
+
+<!-- no 2 -->
+<script>
+		//Selection
+		var usia=15;
+		if (usia<15) {
+			document.write("Usia anda " + usia +  "  harga tiketnya adalah " + "Rp. 10.000");
+		}
+		else if(usia>=15 && usia<=30) {
+			document.write("Usia anda" + usia +  "  harga tiketnya adalah " + "Rp.15.000");
+		}
+		else if (usia<30) {
+			document.write("Usia anda " + usia +  " harga tiketnya adalah " + "Rp. 10.000");
+        }
+        document.write("Nomer 2");
+        document.write("<br/>");	
+</script>
+
+<!-- no 3 -->
+<script>
+    var a = 3;
+        var b = 5;
+        var c = a + b;
+        var d = a - b;
+        var e = a * b;
+        var f = a / b;
+        var g = a % b;
+        document.write("Nomer 3");
+        document.write("Operasi anda Mul dari " + a + " dan " + b + " hasil adalah " + e);
+        document.write("<br>");
+</script>
+        
+<!-- no 4 -->
+<script>
+var bil=prompt("Menampilkan 10 angka genap/ganjil pertama")
+hasil=bil % 2
+if (hasil==0) {
+document.write("10 Angka Genap adalah 2,4,6,8,10,12,14,16,18,20")
+}
+else {
+document.write("10 Angka Ganjil adalah 1,3,5,7,9,11,13,15,17,19")
+}
+</script>
+
+<!-- no 5 -->
+<script>
+var a = 9;
+var b = 5;
+var c  = 4;
+var d = 3;
+var e = a*d - b*c;
+document.write("Nomer 5");
+document.write("<br>");
+document.write("| 9 5 |");
+document.write("<br>");
+document.write("| 4 3 |");
+document.write("<br>");
+document.write("Det =" + a + "*" + d + "-" + b + "*" + c + "=" + e);
+document.write("<br>");
+</script>
+
+<!-- no 6 -->
+<script>
+    var angka1 =10;
+    var angka2 = 35;
+    var angka3 = 17;
+    var angka4 = 50;
+    var angka5 = 30;
+    var jumlahAngka = 5;
+    var mean = angka1+angka2+angka3+angka4+angka5;
+    var mean2 = mean / jumlahAngka;
+    document.write("Nomer 6");
+    document.write("Mean = (" + angka1 + "+" + angka2 + "+" + angka3 + "+" + angka4 + "+" + angka5 + ")" + "/" + jumlahAngka + "=" + mean2 );
+</script>
+
+<!-- no 7 -->
+<script language=javascript >
+    function cek() {
+    var bil=form.bil.value;
+    for (i=2;i<bil;i++){
+    if (bil%i==0) {
+    prima=0;break;
+    }
+    else {
+    prima=1;
+    }
+    }
+    
+    if (prima) {
+    alert('Cek Prima' + "(" + bil + ")" + " hasil True ");
+    }
+    else 
+    alert('Cek Prima' + "(" + bil + ")" + " hasil False");
+    }
+    </script>
+ <body>
+    <form name=form>
+     Masukkan bilangan : <input name=bil type=text >
+    <br>
+    <input type=button onclick="cek()" value=cek>
+    </form>
+    </body>
+    </html>
+
+
+  
